@@ -19,29 +19,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aew-O5-MIG">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="254"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNC-g1-ZTO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Refresh for datetime" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNC-g1-ZTO" userLabel="Time Label">
                                         <rect key="frame" x="8" y="85" width="377" height="20.333333333333329"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="timeLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5S-g5-tPJ">
-                                        <rect key="frame" x="159" y="151.33333333333334" width="75" height="35"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="NNC-g1-ZTO" firstAttribute="leading" secondItem="aew-O5-MIG" secondAttribute="leading" constant="8" id="1Y5-MS-ns7"/>
-                                    <constraint firstItem="y5S-g5-tPJ" firstAttribute="top" secondItem="NNC-g1-ZTO" secondAttribute="bottom" constant="46" id="8xd-dF-Wt8"/>
-                                    <constraint firstItem="y5S-g5-tPJ" firstAttribute="centerX" secondItem="aew-O5-MIG" secondAttribute="centerX" id="D8a-6U-6P1"/>
-                                    <constraint firstAttribute="bottom" secondItem="y5S-g5-tPJ" secondAttribute="bottom" constant="67.670000000000002" id="HVF-va-knU"/>
                                     <constraint firstAttribute="trailing" secondItem="NNC-g1-ZTO" secondAttribute="trailing" constant="8" id="M4e-fO-whV"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y5S-g5-tPJ" secondAttribute="trailing" constant="20" symbolic="YES" id="Uey-Zc-BUa"/>
-                                    <constraint firstItem="y5S-g5-tPJ" firstAttribute="leading" secondItem="aew-O5-MIG" secondAttribute="leading" constant="159" id="Znd-EA-NuU"/>
                                     <constraint firstItem="NNC-g1-ZTO" firstAttribute="top" secondItem="aew-O5-MIG" secondAttribute="top" constant="85" id="hWi-m3-Flj"/>
-                                    <constraint firstItem="y5S-g5-tPJ" firstAttribute="top" secondItem="NNC-g1-ZTO" secondAttribute="bottom" constant="46" id="jKE-jG-kw4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-mC-qvw">
@@ -75,6 +65,9 @@
                             <constraint firstAttribute="bottom" secondItem="50y-T3-cGV" secondAttribute="bottom" id="s7b-rw-kIU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="NNC-g1-ZTO" id="4PX-L5-fhq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
