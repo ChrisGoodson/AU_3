@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834608A72990788D00D6A146 /* ayntk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 834608A62990788D00D6A146 /* ayntk.mp3 */; };
 		83CE5CFF298CE4C800EE3FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE5CFE298CE4C800EE3FE3 /* AppDelegate.swift */; };
 		83CE5D01298CE4C800EE3FE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE5D00298CE4C800EE3FE3 /* SceneDelegate.swift */; };
 		83CE5D03298CE4C800EE3FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE5D02298CE4C800EE3FE3 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		834608A62990788D00D6A146 /* ayntk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ayntk.mp3; sourceTree = "<group>"; };
 		83CE5CFB298CE4C800EE3FE3 /* AU_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AU_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE5CFE298CE4C800EE3FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CE5D00298CE4C800EE3FE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834608A52990787100D6A146 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				834608A62990788D00D6A146 /* ayntk.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		83CE5CF2298CE4C800EE3FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		83CE5CFD298CE4C800EE3FE3 /* AU_3 */ = {
 			isa = PBXGroup;
 			children = (
+				834608A52990787100D6A146 /* Sounds */,
 				83CE5CFE298CE4C800EE3FE3 /* AppDelegate.swift */,
 				83CE5D00298CE4C800EE3FE3 /* SceneDelegate.swift */,
 				83CE5D02298CE4C800EE3FE3 /* ViewController.swift */,
@@ -127,6 +138,7 @@
 			files = (
 				83CE5D0B298CE4CA00EE3FE3 /* LaunchScreen.storyboard in Resources */,
 				83CE5D08298CE4CA00EE3FE3 /* Assets.xcassets in Resources */,
+				834608A72990788D00D6A146 /* ayntk.mp3 in Resources */,
 				83CE5D06298CE4C800EE3FE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
