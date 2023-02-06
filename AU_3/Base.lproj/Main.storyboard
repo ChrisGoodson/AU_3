@@ -42,36 +42,32 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSC-Mz-0Cc">
                                         <rect key="frame" x="0.0" y="198" width="393" height="654"/>
                                         <subviews>
-                                            <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-h1-Vgb">
+                                            <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-h1-Vgb">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Count Down" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-5G-5TP">
-                                                <rect key="frame" x="149.66666666666666" y="77" width="94" height="20.333333333333329"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Press button to start" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-5G-5TP" userLabel="Countdown">
+                                                <rect key="frame" x="118.66666666666667" y="77" width="155.66666666666663" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPx-bL-wsa">
-                                                <rect key="frame" x="46" y="112" width="289" height="94"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="94" id="3hr-qe-x15"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="YGT-mi-DRp"/>
-                                                </constraints>
+                                                <rect key="frame" x="158" y="111.99999999999999" width="77" height="54.333333333333329"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Start timer / Stop music"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Start / Stop"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="VPx-bL-wsa" firstAttribute="top" secondItem="X0y-5G-5TP" secondAttribute="bottom" constant="14.666666666666657" id="2Eo-zz-f3B"/>
+                                            <constraint firstItem="VPx-bL-wsa" firstAttribute="leading" secondItem="QSC-Mz-0Cc" secondAttribute="leading" constant="158" id="4J1-Lw-ZIe"/>
                                             <constraint firstItem="1Vb-h1-Vgb" firstAttribute="leading" secondItem="QSC-Mz-0Cc" secondAttribute="leading" id="6Ud-gG-hKj"/>
-                                            <constraint firstItem="VPx-bL-wsa" firstAttribute="leading" secondItem="QSC-Mz-0Cc" secondAttribute="leading" constant="46" id="7BA-1S-gCx"/>
                                             <constraint firstItem="X0y-5G-5TP" firstAttribute="top" secondItem="QSC-Mz-0Cc" secondAttribute="top" constant="77" id="AXj-J7-jqH"/>
-                                            <constraint firstItem="1Vb-h1-Vgb" firstAttribute="centerX" secondItem="X0y-5G-5TP" secondAttribute="centerX" id="CJS-L8-6Jx"/>
+                                            <constraint firstItem="X0y-5G-5TP" firstAttribute="centerX" secondItem="VPx-bL-wsa" secondAttribute="centerX" id="CdH-gB-LcX"/>
                                             <constraint firstItem="1Vb-h1-Vgb" firstAttribute="top" secondItem="QSC-Mz-0Cc" secondAttribute="top" id="HM6-Jc-Vf5"/>
                                             <constraint firstItem="X0y-5G-5TP" firstAttribute="top" secondItem="1Vb-h1-Vgb" secondAttribute="bottom" constant="25" id="U4m-ie-5Pk"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VPx-bL-wsa" secondAttribute="trailing" symbolic="YES" id="psA-Eh-IUN"/>
-                                            <constraint firstItem="VPx-bL-wsa" firstAttribute="top" secondItem="X0y-5G-5TP" secondAttribute="bottom" constant="14.666666666666671" id="qC6-o3-mnq"/>
+                                            <constraint firstItem="VPx-bL-wsa" firstAttribute="centerX" secondItem="1Vb-h1-Vgb" secondAttribute="centerX" id="vbo-Ny-FJg"/>
                                             <constraint firstItem="X0y-5G-5TP" firstAttribute="centerX" secondItem="QSC-Mz-0Cc" secondAttribute="centerX" id="yup-IB-n1M"/>
                                         </constraints>
                                     </view>
@@ -88,7 +84,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timeLabel" destination="NNC-g1-ZTO" id="4PX-L5-fhq"/>
+                        <outlet property="countdownLabel" destination="X0y-5G-5TP" id="2dT-bf-iSw"/>
+                        <outlet property="countdownTimer" destination="1Vb-h1-Vgb" id="VBF-as-Rfu"/>
+                        <outlet property="startButton" destination="VPx-bL-wsa" id="4Ej-Af-cyQ"/>
+                        <outlet property="timeLabel" destination="NNC-g1-ZTO" id="qzc-Mh-upc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
