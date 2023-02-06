@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+
+        
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
                 let currentDateTime = Date()
                 let formatter = DateFormatter()
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
             startTimer()
         }
     }
+
     
     func startTimer() {
         isRunning = true
@@ -62,13 +64,19 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 
+
+
     
     func stopTimer() {
         isRunning = false
         startButton.setTitle("Start", for: .normal)
         timer.invalidate()
+        countdown = Int(countdownTimer.countDownDuration)
         countdownLabel.text = "Create a timer"
+        chimeSound?.stop()
     }
+
+
     
     @objc func updateTime() {
         let hours = Int(countdown / 3600)

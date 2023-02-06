@@ -56,6 +56,9 @@
                                                 <rect key="frame" x="158" y="111.99999999999999" width="77" height="54.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Start / Stop"/>
+                                                <connections>
+                                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO0-gy-ghF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,9 +87,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countdownLabel" destination="X0y-5G-5TP" id="2dT-bf-iSw"/>
+                        <outlet property="countdownLabel" destination="X0y-5G-5TP" id="Eyb-e0-sLm"/>
                         <outlet property="countdownTimer" destination="1Vb-h1-Vgb" id="VBF-as-Rfu"/>
-                        <outlet property="startButton" destination="VPx-bL-wsa" id="4Ej-Af-cyQ"/>
+                        <outlet property="startButton" destination="VPx-bL-wsa" id="ht5-ox-c4k"/>
                         <outlet property="timeLabel" destination="NNC-g1-ZTO" id="qzc-Mh-upc"/>
                     </connections>
                 </viewController>
